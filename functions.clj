@@ -13,9 +13,9 @@
     ; Given one argument x, returns "Hello, x!"
     ; Given two arguments x and y, returns "x, y!"
 (defn greeting
-    ([]         (println "Hello, World!"))
-    ([x]        (println "Hello, " x "!"))
-    ([x, y]     (println x ", " y "!")))
+    ([]         "Hello, World!")
+    ([x]        (str "Hello, " x "!"))
+    ([x, y]     (str x ", " y "!")))
 
 ;; 4) Define a function do-nothing which takes a single argument x and returns it, unchanged.
 (defn do-nothing [x] x)
